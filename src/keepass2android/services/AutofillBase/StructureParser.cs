@@ -82,7 +82,12 @@ namespace keepass2android.services.AutofillBase
                 var node = _structure.GetWindowNodeAt(i);
 
                 var view = node.RootViewNode;
+                var fallbackPackage = _structure.ActivityComponent.PackageName;
                 ParseRecursive(autofillView, view, isManualRequest);
+                if (autofillView.PackageId == null && fallbackPackage != null)
+                {
+                    autofillView.PackageId = fallbackPackage;
+                }
             }
 
             return autofillView;
