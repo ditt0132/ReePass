@@ -1,3 +1,16 @@
+# WIP PROJECT
+fork of https://github.com/PhilippC/keepass2android.git
+a project that works like
+Android server: save password, autocomplete it
+other clients: request password, autocomplete it
+
+client communicates with server using 
+
+additional diffrents from original:
+completely offline (excluding nearby communicating)
+android keystore encryption (if exists)
+
+
 <h1 align="center"><img src="/src/keepass2android/Resources/mipmap-xxxhdpi/ic_launcher_online.png" align="center" width="100" alt="Keepass2Android Logo">Keepass2Android</h1>
 
 
